@@ -1,0 +1,74 @@
+*
+{
+    padding:0;
+    margin:0;
+}
+body
+{
+    position: absolute;
+    width:100%;
+    height:100%;
+}
+.container
+{
+    width:100%;
+    height:100%;
+}
+/*  */
+.top-bar
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:4%;
+    background-color: darkgray;
+}
+.profile
+{
+    width:15%;
+    height:100%;
+}
+.date-container
+{
+    width:5%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#time
+{
+    font-size: 14px;
+    font-weight: 300;
+}
+#date
+{
+    font-size: 14px;
+    font-weight: 300;
+}
+/*  */
+.main-screen
+{
+    display: flex;
+    align-items: flex-end;
+    height:96%;
+    background-color: darkgreen;
+}
+.app-container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width:100%;
+    height:10%;
+
+    margin-bottom:20px
+}
+.content
+{
+    width:20%;
+    height:100%;
+    background-color: darksalmon;
+    border-radius: 30px;
+}
