@@ -14,6 +14,15 @@ body
     width:100%;
     height:100%;
 }
+.main-screen
+{
+    width:100%;
+    height:100%;
+    background-color: darkgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 /*  */
 .top-bar
 {
@@ -48,13 +57,7 @@ body
     font-weight: 300;
 }
 /*  */
-.main-screen
-{
-    display: flex;
-    align-items: flex-end;
-    height:96%;
-    background-color: darkgreen;
-}
+
 .app-container
 {
     display: flex;
