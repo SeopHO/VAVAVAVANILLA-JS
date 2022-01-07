@@ -8,7 +8,7 @@ function viewMin(num)
     {
         return `0${num}`;
     }
-    else
+    else 
     {
         return num;
     }
