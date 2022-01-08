@@ -4,17 +4,29 @@
 <head>
     <title>TEST</title>
     <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="https://kit.fontawesome.com/1013f4c41b.js"></script>
 </head>
 
 <body>
     <div class="container">
         <div class="main-screen">
+            <div class="popup-container">
+                <div class="popup-box">
+                    <div class="popup-title">
+                        <p>WHO ARE YOU</p>
+                    </div>
+                    <div class="popup-textinput">
+                        <input type="text" minlength="4" maxlength="8" class="text-input">
+                    </div>
+                </div>
+            </div>
             <div class="top-bar">
                 <div class="profile">
                     <div class="profile-ball">
                         
                     </div>
                     <p class="username">???</p>
+                    <i class="fas fa-tools fix"></i>
                 </div>
                 <div class="date-container">
                     <p id="time1">???</p>
@@ -28,9 +40,11 @@
             </div>
         </div>
     </div>
-    <script type="module" src="js/profile.js"></script>
+
+    <script src="js/profile.js"></script>
     <script src="js/time.js"></script>
-    <script type="module" src="js/bg.js"></script>
+    <script src="js/bg.js"></script>
+    <script src="js/api.js"></script>
 </body>
 
 </html>
