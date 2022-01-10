@@ -11,9 +11,10 @@ function makeApp()
     box.style.borderRadius="20px";
     box.style.marginLeft="5px";
     box.style.marginRight="5px";
-
-    appArr.push(`box${cnt++}`);
-    box.classList.add(`box${cnt++}`);
+    box.style.cursor="pointer";
+    cnt++;
+    appArr.push(`box${cnt}`);
+    box.classList.add(`box${cnt}`);
     if(appArr.length>1)
     {
         app_content.style.width=`${(app_content.offsetWidth+80)}px`
@@ -21,7 +22,7 @@ function makeApp()
 
     app_content.appendChild(box);
 }
+console.log(appArr)
 makeApp();
 makeApp();
 makeApp();
-console.log(app_content.offsetWidth);

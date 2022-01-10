@@ -12,7 +12,7 @@ function viewMin(num)
     {
         return num;
     }
-}
+} 
 
 function init()
 {

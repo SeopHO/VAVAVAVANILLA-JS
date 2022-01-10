@@ -8,43 +8,57 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="main-screen">
-            <div class="popup-container">
-                <div class="popup-box">
-                    <div class="popup-title">
-                        <p>WHO ARE YOU</p>
-                    </div>
-                    <div class="popup-textinput">
-                        <input type="text" minlength="4" maxlength="8" class="text-input">
-                    </div>
+    <div class="main-screen">
+        <div class="popup-area">
+            <div class="popup-box">
+                <div class="popup-title">
+                    <p>WHO ARE YOU</p>
                 </div>
+                <input type="text" minlength="4" maxlength="18" class="popup-text-input">
             </div>
+        </div>
+        <div class="top-area">
             <div class="top-bar">
-                <div class="profile">
-                    <div class="profile-ball">
-                        
-                    </div>
-                    <p class="username">???</p>
-                    <i class="fas fa-tools fix"></i>
+                <div class="profile-box">
+                    <div class="profile-ball"></div>
+                    <p class="profile-username">???</p>
+                    <i class="fas fa-tools profile-fix"></i>
                 </div>
                 <div class="date-container">
                     <p id="time1">???</p>
                     <p id="time2">00:00</p>
                 </div>
             </div>
+            <div class="top-etc-area">
+                <div class="profileUrl-area">
+                    <div class="profileUrl-box">
+                        <div class="profileUrl-title-area">
+                            <p class="profileUrl-title">URL</p>
+                        </div>
+                        <div class="profileUrl-input-area">
+                            <input type="text" class="profileUrl-input">
+                        </div>
+                        <div class="profileUrl-submit-area">
+                            <button class="profileUrl-submit">Submit</button>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <!--  -->
+        <div class="bottom-Area">
             <div class="app-container">
                 <div class="content">
-
+    
                 </div>
             </div>
         </div>
+    
     </div>
-
     <script src="js/profile.js"></script>
     <script src="js/time.js"></script>
     <script src="js/bg.js"></script>
-    <script src="js/api.js"></script>
+    <script type="module" src="js/api.js"></script>
 </body>
 
 </html>
