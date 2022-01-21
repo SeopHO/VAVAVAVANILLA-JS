@@ -47,6 +47,7 @@ function createSticky()
             removeTarget = document.querySelector(`.${objname}`);
             deleteSticky(removeTarget);
             cnt--;
+            console.log(cnt);
         })
     }
 }   
