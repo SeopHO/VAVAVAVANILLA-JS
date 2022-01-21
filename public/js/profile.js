@@ -25,7 +25,6 @@ profileUrl_submit.addEventListener('click',function(){
         getUrl(url);
     }
 })
-
 textInput.addEventListener("keyup",event=>{
     if(event.keyCode==13)
     {
@@ -35,12 +34,10 @@ textInput.addEventListener("keyup",event=>{
         }
     }
 })
-
 fixBtn.addEventListener("click",function(){
     localStorage.setItem('name',JSON.stringify(null));
     updateUsername();
 })
-
 
 function getUsername(text)
 {

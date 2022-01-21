@@ -1,8 +1,11 @@
-const app_content = document.querySelector(".content");
+const main_screen = document.querySelector(".main-screen");
+const bottom_area = document.querySelector(".bottom-Area");
+const app_content = document.querySelector(".app-content");
+const top_bar = document.querySelector(".top-bar");
 let appArr = [];
 let cnt=0;
 
-function makeApp()
+function makeApp(title)
 {
     const box = document.createElement("div");
     box.style.width="60px";
@@ -14,7 +17,9 @@ function makeApp()
     box.style.cursor="pointer";
     cnt++;
     appArr.push(`box${cnt}`);
-    box.classList.add(`box${cnt}`);
+    box.classList.add(`boxApp${cnt}`);
+    box.classList.add(`${title}App`);
+    box.innerHTML=`<p>${title}</p>`;
     if(appArr.length>1)
     {
         app_content.style.width=`${(app_content.offsetWidth+80)}px`
@@ -23,6 +28,5 @@ function makeApp()
     app_content.appendChild(box);
 }
 console.log(appArr)
-makeApp();
-makeApp();
-makeApp();
+
+export {makeApp,main_screen,bottom_area,top_bar};
